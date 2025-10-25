@@ -1,10 +1,53 @@
+h3 {
+    text-align: center;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    color: rgb(56, 40, 40);
+   
+}
 .form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-   
     padding-top: 50px;
     border-radius: 3;
     background-color: #f9f9f9;
-    height: 50vh;
+    height: 100vh;
+    position: relative;
+}
+.child-container {
+    position: absolute;
+    border: black solid 0.1px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: azure;
+    transition: background-color 0.3s ease;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+   
+}
+.child-container:hover {
+    background-color: beige;
+   
+}
+.textarea {
+    width: 300px;
+    height: 70px;
+    border-radius: 5px;
+}
+.btn {
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+.btn:hover {
+    background-color: deepskyblue;
+    color: white;
+    cursor: pointer;
+    
 }
