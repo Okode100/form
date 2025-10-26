@@ -73,10 +73,35 @@ h3 {
 }
 }
 /* Landingpage styling  */
+.navcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding: 10px;
+    border:0px solid black;
+    border-radius: 10px;
+    background-color: rgb(247, 241, 241);
+    width:  750px;
+    margin-left: 200px;
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.3); 
+    
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    }
+li a {
+    text-decoration: none;
+    padding: 40px;
+}
+ul li {
+    float: left;
+    padding: 25px;
+}
+ul li a:hover {
+    color: rgb(99, 184, 212);
+    
+    
 }
