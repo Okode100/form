@@ -1,3 +1,4 @@
+/* Form styling  */
 h3 {
     text-align: center;
     display: flex;
@@ -15,6 +16,8 @@ h3 {
     background-color: #f9f9f9;
     height: 100vh;
     position: relative;
+    animation: popInOut 1ms ease-in-out;
+    -webkit-animation: popInOut 5s infinite alternate-reverse;
 }
 .child-container {
     position: absolute;
@@ -51,9 +54,10 @@ h3 {
     color: white;
     cursor: pointer;
     box-shadow: 3px 2px 10px 4px rgba(0, 0, 0, 0.3);
-    animation:popInOut 2s infinite a    AA;
-    -webkit-animation:popInOut 2s infinite a    AA;
+    animation:popInOut 2s ease-in-out infinite;
+    -webkit-animation:popInOut 2s ease-in-out infinite;
 }
+    
 @keyframes popInOut {
     0% {
         transform: scale(1);
